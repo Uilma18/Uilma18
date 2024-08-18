@@ -1,0 +1,71 @@
+import java.util.Scanner;
+//* Construa uma classe para armazenar informacoes de livros para uma biblioteca
+
+public class livro {
+    /*
+    1. Construa uma classe para aamazenar informações de livros para uma biblioteca
+    2. Os dados são:(|)código, (||)titulo, (|||)autor, (|v)quant de exemplares
+    3. Escreva métodos para (a)criar o vetor, (b) ler dados, (c) editar dados a partir da busca por codigo,
+     (d)mostrar dados, (e)mostrar ordenaçaõ por titulo.
+     */
+      int cod, qntExemp;
+      String titulo,autor;
+
+      livro (int c, String t, String a, int q){
+          this.cod = c;
+          this.titulo = t;
+          this.autor = a;
+          this.qntExemp = q;
+
+      }
+      public class biblioteca{
+          static livro[] livro;
+          static int tam;
+
+          public static void criarV(int tamanho){
+              tam = tamanho;
+              livro = new livro[tam];
+          }
+          public static void lerDados(int c, int q, String a, String t){
+              Scanner sc = new Scanner(System.in);
+
+              System.out.println("Digite o Código");
+              int codigo = sc.nextInt();
+              System.out.println("Digite a Quantidade de Exemplares");
+              int qnt = sc.nextInt();
+              System.out.println("Digite o Titulo");
+              String titulo = sc.next();
+              System.out.println("Digite o Nome do Autor");
+              String autor = sc.next();
+
+          }
+          public static void editarDados(int c, int q, String a, String t){
+              for(int i = 0; i < tam; i++){
+                  if(livro[i] !=null && livro[i].cod == c){
+                      livro[i].autor = a;
+                      livro[i].titulo = t;
+                      livro[i].qntExemp= q;
+                      return;
+                  }
+                  System.out.println("Livro Não Encontrado");
+              }
+          }
+          public void mostrarDados(){
+              for(livro livro : livro){
+                  if(livro != null){
+                  }
+              }
+          }
+          public void mostrarDOrd(){
+              livro [] livroOrdenado;
+              if(livro != null && livro != null){
+                  return;
+              }else{
+              }
+          }
+
+
+          }
+
+
+}
