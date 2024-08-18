@@ -1,0 +1,27 @@
+//* Crie uma classe que seja capaz de armazenar dados de um rebanho bovino em uma lista duplamente encadeada
+//* Os dados a serem armazenados são codigos, peso, idade
+public class No {
+    public static void main (String[] args) {
+    }
+       int cod;
+       int idade;
+       double peso;
+       No ant;
+       No prox;
+
+        public No(int cod, int idade, double peso){
+            this.cod = cod;
+            this.idade = idade;
+            this.peso = peso;
+            this.ant = null;
+            this.prox = null;
+    }
+    public No(No ant){
+            this.cod = cod;
+            this.idade = idade;
+            this.peso = peso;
+            this.ant = ant;
+            this.prox = prox;
+
+    }
+}
