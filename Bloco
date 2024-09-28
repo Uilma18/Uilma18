@@ -1,0 +1,25 @@
+public class bloco {
+    public String val;
+    public bloco ant;
+
+    public static void main(String[] args) {
+    }
+   private bloco inicio;
+    private bloco fim;
+    bloco prox;
+
+    public void Bloco(){
+        this.inicio = null;
+        this.fim = null;
+        this.prox = null;
+    }
+    public void inserirI(bloco novo){
+        if(inicio == null){
+            inicio = novo;
+            fim = novo;
+        } else{
+            inicio.prox = novo;
+            inicio = novo;
+        }
+    }
+}
